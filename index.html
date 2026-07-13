@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iran Retold · ایران، از نو</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      background: #f7f4ee;
+      color: #2b2620;
+      font-family: "EB Garamond", Georgia, serif;
+      padding: 2rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #16130f; color: #e8e2d6; }
+      .card { background: #221d17; border-color: #3a3128; }
+    }
+    h1 { font-size: clamp(2rem, 6vw, 3.4rem); font-weight: 400; margin: 0; text-align: center; }
+    .subtitle { opacity: .7; font-style: italic; text-align: center; margin-top: -1rem; }
+    .choices { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+    .card {
+      display: block;
+      width: 230px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      background: #fffdf8;
+      border: 1px solid #e2dccd;
+      border-radius: 14px;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,.12); }
+    .card .lang { font-size: 1.8rem; margin-bottom: .4rem; }
+    .card .note { font-size: 1rem; opacity: .65; }
+    .fa { font-family: "Vazirmatn", Tahoma, sans-serif; }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Iran Retold</h1>
+    <p class="subtitle">Critical essays for young readers · جستارهایی نقادانه برای نوجوانان</p>
+  </div>
+  <div class="choices">
+    <a class="card" href="./en/">
+      <div class="lang">English</div>
+      <div class="note">Read the essays in English</div>
+    </a>
+    <a class="card fa" href="./fa/">
+      <div class="lang">فارسی</div>
+      <div class="note">خواندنِ جستارها به فارسی</div>
+    </a>
+  </div>
+</body>
+</html>
